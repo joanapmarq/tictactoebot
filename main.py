@@ -2,9 +2,9 @@ import discord
 from gamelogic import GameLogic
 from board import Board
 from discord.ext import commands
+from dotenv import load_dotenv
 
-TOKEN = 'OTM4NTA5NDA3MjI0OTg3NzA5.YfrU_w.SSeyrEfLpFPwO0UcMtQ-myxYK0w'
-
+TOKEN = load_dotenv("TOKEN")
 client = commands.Bot(command_prefix="!")
 
 @client.event
